@@ -1,11 +1,36 @@
-@import 'tailwindcss';
+/* resources/css/app.css */
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+/* Custom styles */
+@layer base {
+    body {
+        font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+        background-color: #f8f9fa; /* contoh background ringan */
+        color: #333; /* warna teks default */
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 600;
+    }
+}
+
+/* Contoh tambahan kelas kustom jika dibutuhkan */
+@layer components {
+    .btn-primary {
+        @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition;
+    }
+    
+    .card {
+        @apply bg-white shadow-md rounded p-4;
+    }
 }

@@ -63,7 +63,7 @@
             <div class="about-container">
                 <div class="about-item-jamu">
                     <div class="about-img">
-                        <img src="{{ asset('images/1.png') }}" alt="">
+                        <img src="{{ asset('images/2.jpeg') }}" alt="">
                     </div>
                     <h3 class="about-nama">Daftar Menu Melsya JGP</h3>
                     <span class="about-harga"> </span>
@@ -93,3 +93,4 @@
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+

@@ -56,7 +56,7 @@
             <div class="about-header">
                 <img src="{{ asset('images/1.jpeg') }}" alt="seblak" class="about-subtitle">
                 <br>
-                <a href="https://wa.me/6281779430667" target="_blank" class="btn-wa">Pesan via WA</a>
+                <a href="https://wa.me/62822140119915" target="_blank" class="btn-wa">Pesan via WA</a>
             </div>
 
             <!-- Menu Grid -->
@@ -93,4 +93,5 @@
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+
 

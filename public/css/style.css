@@ -7,7 +7,7 @@
     --first-color: #731919;
     --white-color: #fafaff;
     --dark-color: #e52b2b;
-    --text-color: #440e0e;
+    --text-color: #ffffff;
 
     --body-font: 'Montserrat', sans-serif;
     --big-font-size: 6.25rem;
@@ -213,21 +213,40 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 
-@media screen and (max-width: 768px) {
-    .nav-menu {
-        position: fixed;
-        top: var(--header-height);
-        right: -100%;
-        width: 80%;
-        height: 100%;
-        padding: 2rem;
-        background-color: rgba(255, 255, 255, .3);
-        transition: .5s;
-        backdrop-filter: blur(10px);
-    }
-
-    .show { right: 0; }
+/* Default: menu tertutup */
+.nav-menu {
+  position: fixed;
+  top: var(--header-height);
+  right: -100%;
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, .9);
+  transition: .5s;
+  backdrop-filter: blur(10px);
+  z-index: var(--z-fixed);
 }
+
+/* Saat toggle diklik */
+.nav-menu.show {
+  right: 0;
+}
+
+/* Desktop: menu selalu terbuka */
+@media screen and (min-width: 1024px) {
+  .nav-menu {
+    position: static;
+    display: flex !important;
+    height: auto;
+    background: none;
+    backdrop-filter: none;
+    right: 0;
+  }
+  .nav-toggle {
+    display: none; /* tombol hilang di desktop */
+  }
+}
+
 
 /*HOME*/
 
@@ -391,14 +410,6 @@ img { max-width: 100%; height: auto; display: block; }
     text-align: center;
     line-height: 1.6;
     font-size: 1rem;
-}
-
-/* gambar bulat (override khusus produk umi) */
-.portfolio-img img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 /* label kapsul */

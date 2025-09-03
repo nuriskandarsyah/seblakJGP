@@ -18,7 +18,7 @@
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="{{ route('index') }}" class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}">Dashboard</a></li>
-                    <li class="nav-item"><a href="{{ route('seblak') }}" class="nav-link {{ request()->routeIs('seblak') ? 'active' : '' }}"> Seblak MelsyaJGP</a></li>
+                    <li class="nav-item"><a href="{{ route('seblak') }}" class="nav-link {{ request()->routeIs('seblak') ? 'active' : '' }}">Seblak MelsyaJGP</a></li>
                     <li class="nav-item"><a href="{{ route('cs') }}" class="nav-link {{ request()->routeIs('cs') ? 'active' : '' }}">Cybersecurity</a></li>
                 </ul>
             </div>
@@ -33,7 +33,7 @@
         <section class="home" id="index">
             <div class="home-container bd-grid">
                 <h1 class="home-title">
-                    <span class="produk-text">Desa Jagapura</span>
+                    <span class="produk-text">Desa Jagapura Lor</span>
                 </h1>
 
                 <div class="home-scroll">
@@ -73,7 +73,7 @@
                     </div>
                     <h3 class="about-nama">Cyber Security</h3>
                     <p class="about-deskripsi">Penyampaian informasi terkait pentingnya bijak berinternet dan melindungi diri dari bahaya penipuan online <i>(fraud)</i>.</p>
-                    <a href="{{ route('seblak') }}" class="about-social-btn">
+                    <a href="{{ route('cs') }}" class="about-social-btn">
                         <i class='bx bx-right-arrow-alt'></i> Lihat
                     </a>
                 </div>

@@ -97,13 +97,14 @@
             </div>
         </div>
         <div class=bawah>
-            <span>Created by: @wmboin9</span>
+            <span>Created by: Kelompok 46 KKM UMC</span>
         </div>
     </footer>
 
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+
 
 
 

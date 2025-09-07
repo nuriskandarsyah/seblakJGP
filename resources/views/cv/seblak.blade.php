@@ -12,14 +12,14 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav-logo">DESA JAGAPURA LOR</a>
+                <a href="#" class="nav-logo">UMKM KARANGSONG</a>
             </div>
 
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="{{ route('index') }}" class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}">Dashboard</a></li>
-                    <li class="nav-item"><a href="{{ route('seblak') }}" class="nav-link {{ request()->routeIs('seblak') ? 'active' : '' }}"> Seblak MelsyaJGP</a></li>
-                    <li class="nav-item"><a href="{{ route('cs') }}" class="nav-link {{ request()->routeIs('cs') ? 'active' : '' }}">Cybersecurity</a></li>
+                    <li class="nav-item"><a href="{{ route('karikop') }}" class="nav-link {{ request()->routeIs('karikop') ? 'active' : '' }}">Karikop</a></li>
+                    <li class="nav-item"><a href="{{ route('produkumi') }}" class="nav-link {{ request()->routeIs('produkumi') ? 'active' : '' }}">Produk Umi</a></li>
+                    <li class="nav-item"><a href="{{ route('istypj') }}" class="nav-link {{ request()->routeIs('istypj') ? 'active' : '' }}">Isty_Poenya Jamu</a></li>
                 </ul>
             </div>
 
@@ -30,58 +30,139 @@
     </header>
 
     <main class="l-main">
-        <section class="home" id="seblak">
+        <section class="home" id="karikop">
             <div class="home-container bd-grid">
                 <h1 class="home-title">
-                    <span class="produk-text">Mie Jebew & Seblak Prasmanan</span>
+                    <span class="produk-text">Karikop</span>
                 </h1>
 
                 <div class="home-scroll">
                     <p class="home-description">
-                        Mie Jebew mie kenyal dengan racikan bumbu khas, berpadu kuah pedas gurih yang bisa dipilih levelnya. Cocok untuk kamu yang suka tantangan rasa pedas dan ingin pengalaman kuliner ekstrem yang seru.
-
-                        Seblak Prasmanan sensasi seblak unik dengan konsep prasmanan. Bebas pilih topping favoritmu mulai dari kerupuk, sosis, bakso, ceker, sayuran, hingga topping spesial lainnya. Semua tersaji dengan kuah seblak pedas gurih khas MelsyaJGP yang hangat dan menggugah selera.
-
-                        Baik untuk nongkrong bareng teman, makan santai, atau sekadar mengisi perut dengan hidangan pedas nikmat, MelsyaJGP siap memanjakan lidahmu!
+                        Karikop menyajikan beragam hidangan seafood segar yang diolah dengan cita rasa khas. Menu yang tersedia meliputi kerang hijau, kerang dara, scallop, kerang batik, udang, cumi, kepiting, kerang putih, hingga kerang tahu, yang semuanya dimasak dengan bumbu pilihan untuk memberikan pengalaman kuliner yang lezat dan memuaskan.
                     </p>
-                    <a href="#seblakkatalog" class="home-scroll-link">
+                    <a href="#about" class="home-scroll-link">
                         <i class='bx bx-up-arrow-alt'></i> SCROLL DOWN
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="about section" id="seblakkatalog">
+        <section class="about section" id="about">
             <!-- Header -->
             <div class="about-header">
-                <img src="{{ asset('images/1.jpeg') }}" alt="seblak" class="about-subtitle">
+                <img src="{{ asset('images/karikop.jpg') }}" alt="Karikop" class="about-subtitle">
+                <span class="about-profession">kerang putih | kerang simping | kerang dara | kerang ijo | kerang tahu | kepiting | udang | cumi</span>
                 <br>
-                <a href="https://wa.me/6282214011915" target="_blank" class="btn-wa">Pesan via WA</a>
+                <a href="https://wa.me/6285776048157" target="_blank" class="btn-wa">Pesan via WA</a>
             </div>
 
             <!-- Menu Grid -->
             <div class="about-container">
-                <div class="about-item-jamu">
+                <div class="about-item">
                     <div class="about-img">
-                        <img src="{{ asset('images/2.jpeg') }}" alt="">
+                        <img src="{{ asset('images/kerang.jpg') }}" alt="">
                     </div>
-                    <h3 class="about-nama">Daftar Menu Melsya JGP</h3>
-                    <span class="about-harga"> </span>
+                    <h3 class="about-nama">Seafood Bancakan</h3>
+                    <span class="about-harga">Rp 25.000</span>
                 </div>
+
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/kerangkomplit.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Seafood Bancakan Komplit</h3>
+                    <span class="about-harga">Rp 35.000</span>
+                </div>                
+
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/Calamary.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Calamary (Cumi Crispy)</h3>
+                    <span class="about-harga">Rp 25.000</span>
+                </div>
+                
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/udangcr.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Udang Crispy</h3>
+                    <span class="about-harga">Rp 25.000</span>
+                </div>
+                
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/kerangSimping.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Kerang Simping</h3>
+                    <span class="about-harga">Rp 25.000</span>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/kerangTahu.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Kerang Tahu</h3>
+                    <span class="about-harga">Rp 35.000</span>
+                </div>
+
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/kerangIjo.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Kerang Ijo</h3>
+                    <span class="about-nama">Additional Saos:</span>
+                    <p class="about-nama">Saos Padang | Saos Asam Manis | Saos Tiram</p>
+                    <span class="about-harga">Rp 20.000</span>
+                </div>
+
+                
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/Udang.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Udang</h3>
+                    <span class="about-nama">Additional Saos:</span>
+                    <p class="about-nama">Saos Padang | Saos Mentega | Saos Tiram</p>
+                    <span class="about-harga">Rp 25.000</span>
+                </div>
+                
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/cumi.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Cumi</h3>
+                    <span class="about-nama">Additional Saos:</span>
+                    <p class="about-nama">Saos Padang | Saos Mentega | Saos Tiram</p>
+                    <span class="about-harga">Rp 25.000</span>
+                </div>  
+
+                <div class="about-item">
+                    <div class="about-img">
+                        <img src="{{ asset('images/Kepiting.jpg') }}" alt="">
+                    </div>
+                    <h3 class="about-nama">Kepiting</h3>
+                    <span class="about-nama">Additional Saos:</span>
+                    <p class="about-nama">Saos Padang | Saos Asam Manis | Saos Tiram</p>
+                    <span class="about-harga">Rp 25.000</span>
+                </div>
+                
             </div>
         </section>
+
+
     </main>
 
     <footer class="footer section">
         <div class="footer-container bd-grid">
             <div class="footer-data">
-                <h2 class="footer-title">Melsya JGP</h2>
+                <h2 class="footer-title">{{ $data['name'] }}</h2>
                 <p class="footer-text">Halo {{ $data['name'] }} ini adalah Katalog Menu Kami</p>
             </div>
             
             <div class="footer-data">
                 <h2 class="footer-title">Follow Me</h2>
-                <p>Produk Umi</p>
+                <p>karikop seafood</p>
                 <a href="#" class="footer-social"><i class='bx bxl-instagram'></i></a>
                 <a href="#" class="footer-social"><i class='bx bxl-facebook'></i></a>
             </div>

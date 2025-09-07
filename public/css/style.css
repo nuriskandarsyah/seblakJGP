@@ -363,9 +363,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .menu-slider {
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   overflow: hidden;
   max-width: 100%;
 }
@@ -373,19 +373,20 @@ img { max-width: 100%; height: auto; display: block; }
 .menu-container {
   display: flex;
   transition: transform 0.5s ease;
-  gap: 1.5rem;
+  gap: 1.2rem;
+  padding: 1rem 0; /* beri jarak biar tombol nggak nutupin teks */
 }
 
 .menu-item {
-  min-width: 180px;
+  min-width: 160px;
   flex: 0 0 auto;
   text-align: center;
 }
 
 .menu-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;  /* lingkaran */
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 10px;
   border: 3px solid #ddd;
@@ -402,9 +403,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .menu-nama {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: bold;
-  margin: 5px 0;
+  margin: 4px 0;
 }
 
 .menu-harga {
@@ -412,15 +413,18 @@ img { max-width: 100%; height: auto; display: block; }
   font-weight: bold;
 }
 
+/* Tombol panah */
 .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   background: rgba(0,0,0,0.5);
   border: none;
-  color: white;
-  font-size: 2rem;
+  color: #fff;
+  font-size: 1.5rem;
   cursor: pointer;
-  padding: 10px;
+  padding: 8px 12px;
   border-radius: 50%;
-  position: relative;
   z-index: 2;
 }
 
@@ -429,13 +433,29 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .arrow.left {
-  margin-right: 10px;
+  left: 5px;   /* lebih dekat tepi kiri layar */
 }
 
 .arrow.right {
-  margin-left: 10px;
+  right: 5px;  /* lebih dekat tepi kanan layar */
 }
 
+/* Responsive tombol lebih kecil di HP */
+@media (max-width: 480px) {
+  .menu-item {
+    min-width: 130px;
+  }
+
+  .menu-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+    padding: 6px 9px;
+  }
+}
 /* Foto Menu */
 /* Layout kiri-kanan */
 .menu-layout {
@@ -658,6 +678,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media screen and (min-width: 1024px) {
     .bd-grid { margin-left: auto; margin-right: auto; }
 }
+
 
 
 

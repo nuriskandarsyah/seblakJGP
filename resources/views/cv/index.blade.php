@@ -96,9 +96,13 @@
                 <a href="#" class="footer-social"><i class='bx bxl-facebook'></i></a>
             </div>
         </div>
+        <div class=bawah>
+            <span>Created by: @wmboin9</span>
+        </div>
     </footer>
 
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+
 

@@ -84,12 +84,15 @@
                 <p>Melsya JGP</p>
                 <a href="#" class="footer-social"><i class='bx bxl-instagram'></i></a>
                 <a href="#" class="footer-social"><i class='bx bxl-facebook'></i></a>
-                <span>Created by: Nur Iskandar S</span>
             </div>
+        </div>
+        <div class=bawah>
+            <span>Created by: Nur Iskandar S</span>
         </div>
     </footer>
 
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+
 

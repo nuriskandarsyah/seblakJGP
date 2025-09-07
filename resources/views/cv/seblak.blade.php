@@ -81,50 +81,59 @@
                 <div class="menu-container">
                   <div class="menu-item">
                     <div class="menu-img">
-                      <img src="{{ asset('images/kerang.jpg') }}" alt="">
+                      <img src="{{ asset('images/9.jpg') }}" alt="">
                     </div>
-                    <h3 class="menu-nama">Seafood Bancakan</h3>
-                    <span class="menu-harga">Rp 25.000</span>
                   </div>
             
                   <div class="menu-item">
                     <div class="menu-img">
-                      <img src="{{ asset('images/kerangkomplit.jpg') }}" alt="">
+                      <img src="{{ asset('images/10.jpg') }}" alt="">
                     </div>
-                    <h3 class="menu-nama">Seafood Bancakan Komplit</h3>
-                    <span class="menu-harga">Rp 35.000</span>
                   </div>                
             
                   <div class="menu-item">
                     <div class="menu-img">
-                      <img src="{{ asset('images/Calamary.jpg') }}" alt="">
+                      <img src="{{ asset('images/11.jpg') }}" alt="">
                     </div>
-                    <h3 class="menu-nama">Calamary (Cumi Crispy)</h3>
-                    <span class="menu-harga">Rp 25.000</span>
                   </div>
                   
                   <div class="menu-item">
                     <div class="menu-img">
-                      <img src="{{ asset('images/udangcr.jpg') }}" alt="">
+                      <img src="{{ asset('images/12.jpg') }}" alt="">
                     </div>
-                    <h3 class="menu-nama">Udang Crispy</h3>
-                    <span class="menu-harga">Rp 25.000</span>
                   </div>
                   
                   <div class="menu-item">
                     <div class="menu-img">
-                      <img src="{{ asset('images/kerangSimping.jpg') }}" alt="">
+                      <img src="{{ asset('images/13.jpg') }}" alt="">
                     </div>
-                    <h3 class="menu-nama">Kerang Simping</h3>
-                    <span class="menu-harga">Rp 25.000</span>
                   </div>
             
                   <div class="menu-item">
                     <div class="menu-img">
-                      <img src="{{ asset('images/kerangTahu.jpg') }}" alt="">
+                      <img src="{{ asset('images/14.jpg') }}" alt="">
                     </div>
-                    <h3 class="menu-nama">Kerang Tahu</h3>
-                    <span class="menu-harga">Rp 35.000</span>
+                  </div>
+                </div>
+                  
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/15.jpg') }}" alt="">
+                    </div>
+                  </div>
+                </div>
+            
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/16.jpg') }}" alt="">
+                    </div>
+                  </div>
+                </div>
+            
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/17.jpg') }}" alt="">
+                    </div>
                   </div>
                 </div>
             
@@ -175,6 +184,7 @@
 
 </body>
 </html>
+
 
 
 

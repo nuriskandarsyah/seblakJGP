@@ -12,14 +12,14 @@
     <header class="l-header">
         <nav class="nav bd-grid">
             <div>
-                <a href="#" class="nav-logo">UMKM KARANGSONG</a>
+                <a href="#" class="nav-logo">DESA JAGAPURA LOR</a>
             </div>
 
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
-                    <li class="nav-item"><a href="{{ route('karikop') }}" class="nav-link {{ request()->routeIs('karikop') ? 'active' : '' }}">Karikop</a></li>
-                    <li class="nav-item"><a href="{{ route('produkumi') }}" class="nav-link {{ request()->routeIs('produkumi') ? 'active' : '' }}">Produk Umi</a></li>
-                    <li class="nav-item"><a href="{{ route('istypj') }}" class="nav-link {{ request()->routeIs('istypj') ? 'active' : '' }}">Isty_Poenya Jamu</a></li>
+                    <li class="nav-item"><a href="{{ route('index') }}" class="nav-link {{ request()->routeIs('index') ? 'active' : '' }}">Dashboard</a></li>
+                    <li class="nav-item"><a href="{{ route('seblak') }}" class="nav-link {{ request()->routeIs('seblak') ? 'active' : '' }}">Seblak MelsyaJGP</a></li>
+                    <li class="nav-item"><a href="{{ route('cs') }}" class="nav-link {{ request()->routeIs('cs') ? 'active' : '' }}">Cybersecurity</a></li>
                 </ul>
             </div>
 
@@ -30,7 +30,7 @@
     </header>
 
     <main class="l-main">
-        <section class="home" id="karikop">
+        <section class="home" id="seblak">
             <div class="home-container bd-grid">
                 <h1 class="home-title">
                     <span class="produk-text">Karikop</span>
@@ -50,8 +50,7 @@
         <section class="about section" id="about">
             <!-- Header -->
             <div class="about-header">
-                <img src="{{ asset('images/karikop.jpg') }}" alt="Karikop" class="about-subtitle">
-                <span class="about-profession">kerang putih | kerang simping | kerang dara | kerang ijo | kerang tahu | kepiting | udang | cumi</span>
+                <img src="{{ asset('images/1.jpeg') }}" alt="Seblak" class="about-subtitle">
                 <br>
                 <a href="https://wa.me/6285776048157" target="_blank" class="btn-wa">Pesan via WA</a>
             </div>
@@ -74,78 +73,6 @@
                     <span class="about-harga">Rp 35.000</span>
                 </div>                
 
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/Calamary.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Calamary (Cumi Crispy)</h3>
-                    <span class="about-harga">Rp 25.000</span>
-                </div>
-                
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/udangcr.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Udang Crispy</h3>
-                    <span class="about-harga">Rp 25.000</span>
-                </div>
-                
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/kerangSimping.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Kerang Simping</h3>
-                    <span class="about-harga">Rp 25.000</span>
-                </div>
-
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/kerangTahu.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Kerang Tahu</h3>
-                    <span class="about-harga">Rp 35.000</span>
-                </div>
-
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/kerangIjo.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Kerang Ijo</h3>
-                    <span class="about-nama">Additional Saos:</span>
-                    <p class="about-nama">Saos Padang | Saos Asam Manis | Saos Tiram</p>
-                    <span class="about-harga">Rp 20.000</span>
-                </div>
-
-                
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/Udang.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Udang</h3>
-                    <span class="about-nama">Additional Saos:</span>
-                    <p class="about-nama">Saos Padang | Saos Mentega | Saos Tiram</p>
-                    <span class="about-harga">Rp 25.000</span>
-                </div>
-                
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/cumi.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Cumi</h3>
-                    <span class="about-nama">Additional Saos:</span>
-                    <p class="about-nama">Saos Padang | Saos Mentega | Saos Tiram</p>
-                    <span class="about-harga">Rp 25.000</span>
-                </div>  
-
-                <div class="about-item">
-                    <div class="about-img">
-                        <img src="{{ asset('images/Kepiting.jpg') }}" alt="">
-                    </div>
-                    <h3 class="about-nama">Kepiting</h3>
-                    <span class="about-nama">Additional Saos:</span>
-                    <p class="about-nama">Saos Padang | Saos Asam Manis | Saos Tiram</p>
-                    <span class="about-harga">Rp 25.000</span>
-                </div>
                 
             </div>
         </section>
@@ -172,3 +99,4 @@
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+

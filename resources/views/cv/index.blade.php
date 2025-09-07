@@ -69,7 +69,7 @@
                 <!-- Cyber Security -->
                 <div class="about-item">
                     <div class="about-img">
-                        <i class='bx bx-shield-quarter' style="font-size:4rem; color:#2a3b47;"></i>
+                        <img src="{{ asset('images/cs.jpg') }}" alt="">
                     </div>
                     <h3 class="about-nama">Cyber Security</h3>
                     <p class="about-deskripsi">Penyampaian informasi terkait pentingnya bijak berinternet dan melindungi diri dari bahaya penipuan online <i>(fraud)</i>.</p>
@@ -104,5 +104,6 @@
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+
 
 

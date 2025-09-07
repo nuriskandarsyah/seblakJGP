@@ -516,7 +516,16 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 /*FOOTER*/
+.bawah {
+    text-align: center;
+    padding: 1rem;
+    background: inherit;   /* pakai warna bg yang sama dengan footer */
+}
 
+.bawah span {
+    color: #8B0000;  /* merah tua (darkred) */
+    font-weight: 500;
+}
 .footer { background-color: var(--dark-color); }
 .footer-container { row-gap: 2rem; }
 .footer-title { font-size: var(--normal-font-size); color: var(--white-color); margin-bottom: var(--mb2); }
@@ -567,6 +576,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media screen and (min-width: 1024px) {
     .bd-grid { margin-left: auto; margin-right: auto; }
 }
+
 
 
 

@@ -155,8 +155,27 @@
     </footer>
 
     <script src="{{ asset('js/main.js') }}"></script>
+    <script>
+          let currentIndex = 0;
+          const container = document.querySelector('.menu-container');
+          const items = document.querySelectorAll('.menu-item');
+          const visibleItems = 3; // jumlah menu yang ditampilkan sekaligus
+          const itemWidth = 180 + 24; // lebar item + gap (180px + ~24px)
+        
+          function slideMenu(direction) {
+            const maxIndex = items.length - visibleItems;
+            currentIndex += direction;
+        
+            if (currentIndex < 0) currentIndex = 0;
+            if (currentIndex > maxIndex) currentIndex = maxIndex;
+        
+            container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+          }
+    </script>
+
 </body>
 </html>
+
 
 
 

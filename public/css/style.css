@@ -298,6 +298,13 @@ img { max-width: 100%; height: auto; display: block; }
     text-align: center;
     margin-bottom: 2rem;
 }
+.about-header img {
+    max-width: 100%;   /* biar nggak lebih besar dari layar */
+    height: auto;      /* proporsional */
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;  /* header tetap full, tidak bulat */
+}
 
 .about-subtitle {
     max-width: 800px;
@@ -561,5 +568,6 @@ img { max-width: 100%; height: auto; display: block; }
 @media screen and (min-width: 1024px) {
     .bd-grid { margin-left: auto; margin-right: auto; }
 }
+
 
 

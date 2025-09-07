@@ -70,6 +70,69 @@
                 </div>
             </div>
         </section>
+        
+        <section class="menu-section">
+              <h2 class="menu-title">Daftar Menu</h2>
+              <div class="menu-slider">
+                <!-- Tombol panah kiri -->
+                <button class="arrow left" onclick="slideMenu(-1)">&#10094;</button>
+            
+                <!-- Container menu -->
+                <div class="menu-container">
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/kerang.jpg') }}" alt="">
+                    </div>
+                    <h3 class="menu-nama">Seafood Bancakan</h3>
+                    <span class="menu-harga">Rp 25.000</span>
+                  </div>
+            
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/kerangkomplit.jpg') }}" alt="">
+                    </div>
+                    <h3 class="menu-nama">Seafood Bancakan Komplit</h3>
+                    <span class="menu-harga">Rp 35.000</span>
+                  </div>                
+            
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/Calamary.jpg') }}" alt="">
+                    </div>
+                    <h3 class="menu-nama">Calamary (Cumi Crispy)</h3>
+                    <span class="menu-harga">Rp 25.000</span>
+                  </div>
+                  
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/udangcr.jpg') }}" alt="">
+                    </div>
+                    <h3 class="menu-nama">Udang Crispy</h3>
+                    <span class="menu-harga">Rp 25.000</span>
+                  </div>
+                  
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/kerangSimping.jpg') }}" alt="">
+                    </div>
+                    <h3 class="menu-nama">Kerang Simping</h3>
+                    <span class="menu-harga">Rp 25.000</span>
+                  </div>
+            
+                  <div class="menu-item">
+                    <div class="menu-img">
+                      <img src="{{ asset('images/kerangTahu.jpg') }}" alt="">
+                    </div>
+                    <h3 class="menu-nama">Kerang Tahu</h3>
+                    <span class="menu-harga">Rp 35.000</span>
+                  </div>
+                </div>
+            
+                <!-- Tombol panah kanan -->
+                <button class="arrow right" onclick="slideMenu(1)">&#10095;</button>
+              </div>
+            </section>
+
     </main>
 
     <footer class="footer section">
@@ -94,5 +157,6 @@
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+
 
 

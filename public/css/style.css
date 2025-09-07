@@ -357,7 +357,6 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .menu-title {
-/*   margin-bottom: 1rem; */
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -374,7 +373,7 @@ img { max-width: 100%; height: auto; display: block; }
   display: flex;
   transition: transform 0.5s ease;
   gap: 1.2rem;
-  padding: 1rem 0; /* beri jarak biar tombol nggak nutupin teks */
+  padding: 1rem 0;
 }
 
 .menu-item {
@@ -402,17 +401,6 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 50%;
 }
 
-.menu-nama {
-  font-size: 0.95rem;
-  font-weight: bold;
-  margin: 4px 0;
-}
-
-.menu-harga {
-  color: #e63946;
-  font-weight: bold;
-}
-
 /* Tombol panah */
 .arrow {
   position: absolute;
@@ -432,32 +420,17 @@ img { max-width: 100%; height: auto; display: block; }
   background: rgba(0,0,0,0.8);
 }
 
-.arrow.left {
-  left: 5px;   /* lebih dekat tepi kiri layar */
-}
+.arrow.left { left: 5px; }
+.arrow.right { right: 5px; }
 
-.arrow.right {
-  right: 5px;  /* lebih dekat tepi kanan layar */
-}
-
-/* Responsive tombol lebih kecil di HP */
+/* Responsive slider */
 @media (max-width: 480px) {
-  .menu-item {
-    min-width: 130px;
-  }
-
-  .menu-img {
-    width: 120px;
-    height: 120px;
-  }
-
-  .arrow {
-    font-size: 1.2rem;
-    padding: 6px 9px;
-  }
+  .menu-item { min-width: 130px; }
+  .menu-img { width: 120px; height: 120px; }
+  .arrow { font-size: 1.2rem; padding: 6px 9px; }
 }
-/* Foto Menu */
-/* Layout kiri-kanan */
+
+/* Layout kiri-kanan menu detail */
 .menu-layout {
   display: flex;
   flex-wrap: wrap;
@@ -466,37 +439,34 @@ img { max-width: 100%; height: auto; display: block; }
   justify-content: center;
 }
 
-/* Kolom kiri */
-.menu-left {
-  flex: 1;
-}
-
+.menu-left { flex: 1; }
 .menu-thumbs {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
-
 .menu-thumbs img {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: 10px; /* kotak dengan sudut melengkung */
+  border-radius: 10px;
 }
-
-/* Kolom kanan */
-.menu-right {
-  flex: 1;
-  text-align: center;
-}
-
+.menu-right { flex: 1; text-align: center; }
 .menu-right img {
   width: 250px;
   height: 250px;
   object-fit: cover;
-  border-radius: 15px; /* kotak halus */
+  border-radius: 15px;
 }
 
+/* Responsive layout kiri-kanan */
+@media (max-width: 768px) {
+  .menu-layout { flex-direction: column; text-align: center; }
+  .menu-left, .menu-right { flex: unset; width: 100%; }
+  .menu-thumbs { justify-content: center; flex-wrap: wrap; }
+  .menu-thumbs img { width: 80px; height: 80px; }
+  .menu-right img { width: 200px; height: 200px; }
+}
 
 .about-img {
     width: auto;
@@ -678,6 +648,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media screen and (min-width: 1024px) {
     .bd-grid { margin-left: auto; margin-right: auto; }
 }
+
 
 
 

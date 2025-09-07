@@ -350,6 +350,92 @@ img { max-width: 100%; height: auto; display: block; }
     align-items: center;   /* isi di tengah */
 }
 
+.menu-section {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.menu-title {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.menu-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 1.5rem;
+}
+
+.menu-item {
+  min-width: 180px;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.menu-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;  /* lingkaran */
+  overflow: hidden;
+  margin: 0 auto 10px;
+  border: 3px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.menu-nama {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.menu-harga {
+  color: #e63946;
+  font-weight: bold;
+}
+
+.arrow {
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.arrow:hover {
+  background: rgba(0,0,0,0.8);
+}
+
+.arrow.left {
+  margin-right: 10px;
+}
+
+.arrow.right {
+  margin-left: 10px;
+}
+
 /* Foto Menu */
 /* Layout kiri-kanan */
 .menu-layout {
@@ -572,6 +658,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media screen and (min-width: 1024px) {
     .bd-grid { margin-left: auto; margin-right: auto; }
 }
+
 
 
 

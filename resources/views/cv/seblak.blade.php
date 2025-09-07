@@ -76,14 +76,15 @@
         <div class="footer-container bd-grid">
             <div class="footer-data">
                 <h2 class="footer-title">Melsya JGP</h2>
-                <p class="footer-text">Halo {{ $data['name'] }} ini adalah Katalog Menu Kami</p>
+                <p class="footer-text">Halo Wargi, ini adalah Katalog Menu Kami</p>
             </div>
             
             <div class="footer-data">
                 <h2 class="footer-title">Follow Me</h2>
-                <p>Produk Umi</p>
+                <p>Melsya JGP</p>
                 <a href="#" class="footer-social"><i class='bx bxl-instagram'></i></a>
                 <a href="#" class="footer-social"><i class='bx bxl-facebook'></i></a>
+                <span>Created by: Nur Iskandar S</span>
             </div>
         </div>
     </footer>
@@ -91,3 +92,4 @@
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>
+

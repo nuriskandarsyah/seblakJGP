@@ -130,11 +130,11 @@
       let currentIndex = 0;
       const container = document.querySelector('.menu-container');
       const items = document.querySelectorAll('.menu-item');
-      const itemWidth = 160 + 19; // width + gap (disesuaikan)
+      const itemWidth = 160 + 19;
     
       // Hitung jumlah item yang bisa tampil sesuai ukuran layar
       function getVisibleItems() {
-        if (window.innerWidth >= 1024) return 5; // desktop
+        if (window.innerWidth >= 1024) return 7; // desktop
         if (window.innerWidth >= 768) return 4;  // tablet
         return 3; // hp
       }
@@ -166,6 +166,7 @@
 
 </body>
 </html>
+
 
 
 

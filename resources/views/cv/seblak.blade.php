@@ -134,7 +134,7 @@
     
       // Hitung jumlah item yang bisa tampil sesuai ukuran layar
       function getVisibleItems() {
-        if (window.innerWidth >= 1024) return 7; // desktop
+        if (window.innerWidth >= 1024) return 6; // desktop
         if (window.innerWidth >= 768) return 4;  // tablet
         return 3; // hp
       }
@@ -166,6 +166,7 @@
 
 </body>
 </html>
+
 
 
 

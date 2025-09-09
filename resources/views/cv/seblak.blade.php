@@ -114,42 +114,58 @@
     </div>
   </footer>
 
-  <script>
-    const navToggle = document.getElementById("nav-toggle");
-    const navMenu = document.getElementById("nav-menu");
-    navToggle.addEventListener("click", () => {  
-        navMenu.classList.toggle("show");
-    });
+    <script>
+      const navToggle = document.getElementById("nav-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      navToggle.addEventListener("click", () => {  
+          navMenu.classList.toggle("show");
+      });
     
-    document.querySelectorAll(".nav-link").forEach(link => {
-        link.addEventListener("click", () => {
-            navMenu.classList.remove("show");
-        });
-    });
-    let currentIndex = 0;
-    const container = document.querySelector('.menu-container');
-    const items = document.querySelectorAll('.menu-item');
-    const visibleItems = 3; // jumlah menu terlihat sekaligus
-    const itemWidth = 160 + 19; // min-width + gap (disesuaikan)
+      document.querySelectorAll(".nav-link").forEach(link => {
+          link.addEventListener("click", () => {
+              navMenu.classList.remove("show");
+          });
+      });
+    
+      let currentIndex = 0;
+      const container = document.querySelector('.menu-container');
+      const items = document.querySelectorAll('.menu-item');
+      const itemWidth = 160 + 19; // width + gap (disesuaikan)
+    
+      // Hitung jumlah item yang bisa tampil sesuai ukuran layar
+      function getVisibleItems() {
+        if (window.innerWidth >= 1024) return 5; // desktop
+        if (window.innerWidth >= 768) return 4;  // tablet
+        return 3; // hp
+      }
+    
+      function slideMenu(direction) {
+        const visibleItems = getVisibleItems();
+        const maxIndex = items.length - visibleItems;
+    
+        currentIndex += direction;
+        if (currentIndex < 0) currentIndex = 0;
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+    
+        container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+    
+        // toggle tombol panah
+        document.querySelector('.arrow.left').style.display = currentIndex === 0 ? 'none' : 'block';
+        document.querySelector('.arrow.right').style.display = currentIndex === maxIndex ? 'none' : 'block';
+      }
+    
+      // Update saat resize
+      window.addEventListener("resize", () => {
+        currentIndex = 0;
+        slideMenu(0);
+      });
+    
+      // Inisialisasi
+      slideMenu(0);
+    </script>
 
-    function slideMenu(direction) {
-      const maxIndex = items.length - visibleItems;
-      currentIndex += direction;
-
-      if (currentIndex < 0) currentIndex = 0;
-      if (currentIndex > maxIndex) currentIndex = maxIndex;
-
-      container.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-
-      // toggle tombol panah
-      document.querySelector('.arrow.left').style.display = currentIndex === 0 ? 'none' : 'block';
-      document.querySelector('.arrow.right').style.display = currentIndex === maxIndex ? 'none' : 'block';
-    }
-
-    // Inisialisasi
-    slideMenu(0);
-  </script>
 </body>
 </html>
+
 
 

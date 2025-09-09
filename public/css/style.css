@@ -139,7 +139,7 @@ img { max-width: 100%; height: auto; display: block; }
     background-color: var(--first-color);
 }
 .about-social-btn {
-    margin-top: 0.8rem;
+/*     margin-top: 0.8rem; */
     display: inline-flex;
     align-items: center;
     gap: 8px; /* jarak icon dan teks */
@@ -694,6 +694,7 @@ img { max-width: 100%; height: auto; display: block; }
 @media screen and (min-width: 1024px) {
     .bd-grid { margin-left: auto; margin-right: auto; }
 }
+
 
 
 

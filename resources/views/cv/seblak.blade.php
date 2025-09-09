@@ -72,7 +72,6 @@
     </section>
     
     <section class="menu-section">
-      <h2 class="menu-title">Daftar Menu</h2>
       <div class="menu-slider">
         <!-- Tombol panah kiri -->
         <button class="arrow left" onclick="slideMenu(-1)">&#10094;</button>
@@ -152,4 +151,5 @@
   </script>
 </body>
 </html>
+
 
